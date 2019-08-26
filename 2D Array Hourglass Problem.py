@@ -9,14 +9,8 @@ import sys
 
 # Complete the hourglassSum function below.
 def hourglassSum(arr):
-    sum1 = []
-    for i in range(len(arr) - 2):
-        for j in range(len(arr) - 2):
-            sum1.append(
-                arr[i][j] + arr[i][j + 1] + arr[i][j + 2] + arr[i + 1][j + 1] + arr[i + 2][j] + arr[i + 1][j + 1] +
-                arr[i + 2][j + 2])
-
-    return (max(sum1))
+    return (max([sum(arr[i - 1][j - 1:j + 2] + [arr[i][j]] + arr[i + 1][j - 1:j + 2]) for j in range(1, 5) for i in
+                 range(1, 5)]))
 
 
 if __name__ == '__main__':
