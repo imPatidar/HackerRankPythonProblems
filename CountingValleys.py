@@ -6,10 +6,11 @@ import random
 import re
 import sys
 
+
 # Complete the countingValleys function below.
 def countingValleys(n, s):
-    t=0
-    q=0
+    t = 0
+    q = 0
     for i in s:
         if i == 'U':
             t += 1
@@ -18,6 +19,7 @@ def countingValleys(n, s):
         else:
             t -= 1
     return q
+
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
