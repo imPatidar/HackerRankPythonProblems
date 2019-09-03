@@ -1,7 +1,6 @@
 import os
 from collections import defaultdict
 
-
 def pickingNumbers(a):
     d = defaultdict(int)
     r = 0
