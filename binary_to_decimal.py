@@ -5,4 +5,13 @@ def decimal_to_binary(n):
         return n % 2 + 10 * decimal_to_binary(int(n / 2))
 
 
-print(decimal_to_binary(4))
+def binary_to_decimal(n1):
+    n = len(n1)
+    res = 0
+    for i in range(1, n + 1):
+        res = res + int(n1[i - 1]) * 2 ** (n - i)
+    return res
+
+
+# print(decimal_to_binary(4))
+print(binary_to_decimal('10000'))
