@@ -46,3 +46,5 @@ if __name__ == '__main__':
     fptr.write(str(total) + '\n')
 
     fptr.close()
+    
+# good idea and futher changes can be made to make it better
